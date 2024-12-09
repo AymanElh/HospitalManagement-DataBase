@@ -23,7 +23,7 @@ VALUES
 ('Noah', 'Lopez', 'Male', '1985-12-31', '888-888-8888', 'noah.lopez@example.com', '161 Cypress Ln'),
 ('Isabella', 'Hill', 'Female', '1999-01-01', '666-666-6666', 'isabella.hill@example.com', '171 Sycamore Ct'),
 ('Mason', 'Green', 'Male', '1971-09-14', '999-999-9999', 'mason.green@example.com', '181 Palm Dr'),
-('Ayman', 'Elh', 'Male', '2003-01-01', '997 888 777', 'ayman@example.com', '182 green street')
+('Ayman', 'Elh', 'Male', '2003-01-01', '997 888 777', 'ayman@example.com', '182 green street');
 
 
 -- Insert data into medications
@@ -231,23 +231,23 @@ VALUES
 INSERT INTO prescriptions (patient_id, doctor_id, medication_id, prescription_date, dosage_instructions)
 VALUES
 (1, 1, 1, '2023-12-01', 'Take 1 tablet daily after breakfast'),
-(2, 2, 3, '2023-12-01', 'Take 2 tablets every 6 hours for 7 days'),
-(3, 3, 5, '2023-12-02', 'Take 1 tablet every morning for 30 days'),
-(4, 4, 2, '2023-12-03', 'Apply cream to affected area twice daily for 14 days'),
-(5, 5, 4, '2023-12-03', 'Take 1 capsule twice a day for 10 days'),
-(6, 6, 7, '2023-12-04', 'Take 1 tablet before meals for 7 days'),
-(7, 7, 6, '2023-12-04', 'Take 1 tablet every evening before bed'),
+(2, 2, 2, '2023-12-01', 'Take 2 tablets every 6 hours for 7 days'),
+(3, 3, 3, '2023-12-02', 'Take 1 tablet every morning for 30 days'),
+(4, 4, 4, '2023-12-03', 'Apply cream to affected area twice daily for 14 days'),
+(5, 5, 5, '2023-12-03', 'Take 1 capsule twice a day for 10 days'),
+(6, 6, 6, '2023-12-04', 'Take 1 tablet before meals for 7 days'),
+(7, 7, 7, '2023-12-04', 'Take 1 tablet every evening before bed'),
 (8, 8, 8, '2023-12-05', 'Inhale 1 puff twice daily for asthma control'),
-(9, 9, 10, '2023-12-05', 'Take 1 tablet every 4 hours as needed for pain'),
-(10, 10, 9, '2023-12-06', 'Take 1 tablet every 12 hours for 10 days'),
+(9, 9, 9, '2023-12-05', 'Take 1 tablet every 4 hours as needed for pain'),
+(10, 10, 10, '2023-12-06', 'Take 1 tablet every 12 hours for 10 days'),
 (11, 11, 11, '2023-12-06', 'Take 1 injection every week for 4 weeks'),
 (12, 12, 12, '2023-12-07', 'Take 1 syrup teaspoon 3 times daily for 5 days'),
-(13, 13, 14, '2023-12-07', 'Take 1 tablet every morning and night for 7 days'),
-(14, 14, 15, '2023-12-08', 'Take 1 tablet every morning after breakfast'),
-(15, 15, 16, '2023-12-08', 'Apply ointment to skin lesion 3 times daily for 10 days'),
-(16, 16, 17, '2023-12-09', 'Take 2 tablets once a day for 15 days'),
-(17, 17, 18, '2023-12-09', 'Take 1 tablet every 8 hours as needed for fever'),
-(18, 18, 19, '2023-12-10', 'Take 1 tablet daily for 14 days'),
-(19, 19, 20, '2023-12-10', 'Take 2 capsules 3 times a day for 7 days'),
-(20, 20, 21, '2023-12-11', 'Take 1 tablet 30 minutes before meals for 10 days'),
-(22, 10, 1, '2024-12-10', 'Take 1 tablet 30 minutes before meals for 10 days');
+(13, 13, 13, '2023-12-07', 'Take 1 tablet every morning and night for 7 days'),
+(14, 14, 14, '2023-12-08', 'Take 1 tablet every morning after breakfast'),
+(15, 15, 15, '2023-12-08', 'Apply ointment to skin lesion 3 times daily for 10 days'),
+(16, 16, 16, '2023-12-09', 'Take 2 tablets once a day for 15 days'),
+(17, 17, 17, '2023-12-09', 'Take 1 tablet every 8 hours as needed for fever'),
+(18, 18, 18, '2023-12-10', 'Take 1 tablet daily for 14 days'),
+(19, 19, 19, '2023-12-10', 'Take 2 capsules 3 times a day for 7 days'),
+(20, 20, 20, '2023-12-11', 'Take 1 tablet 30 minutes before meals for 10 days');
+
