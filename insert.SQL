@@ -22,7 +22,8 @@ VALUES
 ('Amelia', 'Clark', 'Female', '1993-07-03', '222-222-2222', 'amelia.clark@example.com', '151 Willow Ave'),
 ('Noah', 'Lopez', 'Male', '1985-12-31', '888-888-8888', 'noah.lopez@example.com', '161 Cypress Ln'),
 ('Isabella', 'Hill', 'Female', '1999-01-01', '666-666-6666', 'isabella.hill@example.com', '171 Sycamore Ct'),
-('Mason', 'Green', 'Male', '1971-09-14', '999-999-9999', 'mason.green@example.com', '181 Palm Dr');
+('Mason', 'Green', 'Male', '1971-09-14', '999-999-9999', 'mason.green@example.com', '181 Palm Dr'),
+('Ayman', 'Elh', 'Male', '2003-01-01', '997 888 777', 'ayman@example.com', '182 green street')
 
 
 -- Insert data into medications
@@ -141,7 +142,17 @@ VALUES
 ('Noah', 'Green', 'Pulmonologist', '888-888-8888', 'noah.green@hospital.com', 17),
 ('Chloe', 'Baker', 'Hematologist', '666-666-6666', 'chloe.baker@hospital.com', 18),
 ('Ethan', 'Adams', 'Rehabilitation Specialist', '333-333-3333', 'ethan.adams@hospital.com', 19),
-('Charlotte', 'Perez', 'Researcher', '111-111-1111', 'charlotte.perez@hospital.com', 20);
+('Charlotte', 'Perez', 'Researcher', '111-111-1111', 'charlotte.perez@hospital.com', 20),
+('John', 'Smith', 'Cardiologist', '555-123-4567', 'john.smith@example.com', 1),
+('Emily', 'Johnson', 'Neurologist', '555-987-6543', 'emily.johnson@example.com', 2),
+('Michael', 'Brown', 'Orthopedic Surgeon', '555-456-7890', 'michael.brown@example.com', 3),
+('Sarah', 'Davis', 'Pediatrician', '555-654-3210', 'sarah.davis@example.com', 4),
+('David', 'Wilson', 'Dermatologist', '555-321-0987', 'david.wilson@example.com', 5),
+('Emma', 'Taylor', 'General Physician', '555-789-0123', 'emma.taylor@example.com', 1),
+('James', 'Anderson', 'Psychiatrist', '555-567-2345', 'james.anderson@example.com', 2),
+('Olivia', 'Thomas', 'Radiologist', '555-678-3456', 'olivia.thomas@example.com', 3),
+('Robert', 'Harris', 'Oncologist', '555-890-4567', 'robert.harris@example.com', 4),
+('Sophia', 'Martin', 'Urologist', '555-012-5678', 'sophia.martin@example.com', 5);
 
 
 INSERT INTO staff (first_name, last_name, job_title, phone_number, email, department_id)
@@ -189,7 +200,8 @@ VALUES
 (17, 17, '2023-10-01', '2023-10-05'),
 (18, 18, '2023-10-10', '2023-10-15'),
 (19, 19, '2023-11-01', '2023-11-07'),
-(20, 20, '2023-11-10', '2023-11-15');
+(20, 20, '2023-11-10', '2023-11-15'),
+(21, 3, '2024-12-04', '2024-12-10');
 
 
 INSERT INTO appointments (appointment_date, appointment_time, doctor_id, patient_id, reason)
@@ -237,4 +249,5 @@ VALUES
 (17, 17, 18, '2023-12-09', 'Take 1 tablet every 8 hours as needed for fever'),
 (18, 18, 19, '2023-12-10', 'Take 1 tablet daily for 14 days'),
 (19, 19, 20, '2023-12-10', 'Take 2 capsules 3 times a day for 7 days'),
-(20, 20, 21, '2023-12-11', 'Take 1 tablet 30 minutes before meals for 10 days');
+(20, 20, 21, '2023-12-11', 'Take 1 tablet 30 minutes before meals for 10 days'),
+(22, 10, 1, '2024-12-10', 'Take 1 tablet 30 minutes before meals for 10 days');
