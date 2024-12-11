@@ -83,13 +83,14 @@ DELETE FROM appointments WHERE appointment_date < '2024-01-01';
 UPDATE departments SET department_name = "Cancer Treatment" WHERE department_name LIKE "Oncology";
 
 -- 19. 
-SELECT gender, COUNT(gender) FROM patients GROUP BY gender;
+SELECT gender, COUNT(*) FROM patients GROUP BY gender HAVING COUNT(*) >= 2;
 
 -- 20.
 CREATE VIEW active_admission AS 
 SELECT * FROM admissions WHERE discharge_date IS NULL;
-
-
+INSERT INTO admissions (patient_id, room_id, admission_date) 
+VALUES (4, 10, '2024-12-10');
+SELECT * FROM active_admission;
 -- BONUS
 -- 1. 
 SELECT CONCAT(patients.first_name, " ", patients.last_name), CONCAT(doctors.first_name, " ", doctors.last_name)
