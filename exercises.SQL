@@ -1,3 +1,4 @@
+-- Active: 1733497500124@@127.0.0.1@3306@hospitalmanagement
 
 -- 1. Insert a new patient into the patients table
 INSERT INTO patients 
@@ -112,9 +113,9 @@ JOIN admissions ON admissions.patient_id = patients.patient_id
 JOIN rooms ON rooms.room_id = admissions.room_id;
 
 -- 5. 
-SELECT departments.department_name, COUNT(patients.patient_id) FROM departments
-JOIN doctors ON doctors.department_id = departments.department_id
-JOIN appointments ON appointments.doctor_id = doctors.doctor_id
-JOIN patients ON patients.patient_id = appointments.patient_id
-JOIN admissions ON admissions.patient_id = patients.patient_id
-GROUP BY departments.department_id;
+SELECT dep.department_name, COUNT(DISTINCT a.patient_id) AS total_patients
+FROM admissions a
+JOIN appointments ap ON ap.patient_id = a.patient_id
+JOIN doctors d ON ap.doctor_id = d.doctor_id
+JOIN departments dep ON d.department_id = dep.department_id
+GROUP BY dep.department_name;
